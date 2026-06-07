@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../capaDatos/capaDatos.csproj" Id="65fd584b-8767-49c8-907c-5ae7f1988776" />
+  <Project Path="../capaDeNegocios/capaDeNegocios.csproj" Id="f7fe0efa-12b6-42d4-8b4b-036c53a41798" />
+  <Project Path="Clinica Hospimesat.csproj" />
+</Solution>
