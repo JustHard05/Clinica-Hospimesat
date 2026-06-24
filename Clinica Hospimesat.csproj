@@ -2,11 +2,25 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net10.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>Clinica_Hospimesat</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="capaDatos\**" />
+    <Compile Remove="capaDeNegocios\**" />
+    <EmbeddedResource Remove="capaDatos\**" />
+    <EmbeddedResource Remove="capaDeNegocios\**" />
+    <None Remove="capaDatos\**" />
+    <None Remove="capaDeNegocios\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="capaDatos\capaDatos.csproj" />
+    <ProjectReference Include="capaDeNegocios\capaDeNegocios.csproj" />
+  </ItemGroup>
 
 </Project>
