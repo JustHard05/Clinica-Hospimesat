@@ -45,5 +45,40 @@ namespace Clinica_Hospimesat
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            { 
+                capaDeNegocios.N_Pacientes negocio = new capaDeNegocios.N_Pacientes();
+
+                string resultado = negocio.GuardarPaciente(
+                    "Paciente Prueba Capas",
+                    "0801199999999",
+                    DateTime.Now,
+                    "2222-3333",
+                    "Direccion de Prueba",
+                    "M"
+                );
+
+                if (resultado == "OK")
+                {
+                    MessageBox.Show("Operación exitosa: El registro fue procesado e insertado correctamente a través de la arquitectura de capas.", "Confirmación del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Advertencia de negocio: " + resultado, "Validación de Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Excepción detectada en el flujo de datos: " + ex.Message, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
