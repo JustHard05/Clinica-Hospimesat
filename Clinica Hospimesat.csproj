@@ -19,6 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="capaDatos\capaDatos.csproj" />
     <ProjectReference Include="capaDeNegocios\capaDeNegocios.csproj" />
   </ItemGroup>
