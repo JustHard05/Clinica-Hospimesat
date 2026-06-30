@@ -9,7 +9,7 @@ namespace capaDatos
         public DataTable ListarPacientes()
         {
             DataTable tabla = new DataTable();
-            string query = "SELECT id_paciente, nombre, identidad, fecha_nacimiento, telefono, direccion, sexo FROM paciente";
+            string query = "SELECT id_paciente, CAST(id_paciente AS VARCHAR(10)) AS id_texto, nombre, identidad, fecha_nacimiento, telefono, direccion, sexo FROM paciente";
 
             try
             {
