@@ -1,9 +1,26 @@
+Ôªøusing System;
+using System.Drawing; 
+using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
+
 namespace Clinica_Hospimesat
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
         public Form1()
         {
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+                Primary.Blue800,
+                Primary.Blue900,
+                Primary.Blue500,
+                Accent.LightBlue200,
+                TextShade.WHITE
+            );
+
             InitializeComponent();
         }
 
@@ -43,7 +60,22 @@ namespace Clinica_Hospimesat
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            try
+            {
+                capaDeNegocios.N_Pacientes conexionTest = new capaDeNegocios.N_Pacientes();
 
+                conexionTest.ObtenerPacientes();
+
+                lblEstadoServidor.Text = "‚óè Servidor: Conectado";
+                lblEstadoServidor.ForeColor = Color.DarkGreen;
+                lblEstadoServidor.Refresh();
+            }
+            catch (Exception)
+            {
+                lblEstadoServidor.Text = "‚óè Servidor: Desconectado / Error de red";
+                lblEstadoServidor.ForeColor = Color.Red;
+                lblEstadoServidor.Refresh();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -53,8 +85,31 @@ namespace Clinica_Hospimesat
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            Form2 ventanaRegistros = new Form2();
+            ventanaRegistros.Show();
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            Form3 ventanaCitas = new Form3();
+            ventanaCitas.Show();
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            Form4 ventanaNuevoPaciente = new Form4();
+            ventanaNuevoPaciente.Show();
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
             try
-            { 
+            {
                 capaDeNegocios.N_Pacientes negocio = new capaDeNegocios.N_Pacientes();
 
                 string resultado = negocio.GuardarPaciente(
@@ -68,17 +123,32 @@ namespace Clinica_Hospimesat
 
                 if (resultado == "OK")
                 {
-                    MessageBox.Show("OperaciÛn exitosa: El registro fue procesado e insertado correctamente a travÈs de la arquitectura de capas.", "ConfirmaciÛn del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Operaci√≥n exitosa: El registro fue procesado e insertado correctamente a trav√©s de la arquitectura de capas.", "Confirmaci√≥n del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Advertencia de negocio: " + resultado, "ValidaciÛn de Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Advertencia de negocio: " + resultado, "Validaci√≥n de Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("ExcepciÛn detectada en el flujo de datos: " + ex.Message, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Excepci√≥n detectada en el flujo de datos: " + ex.Message, "Error del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblEstadoServior_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

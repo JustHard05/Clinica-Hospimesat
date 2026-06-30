@@ -29,77 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            textBox1 = new TextBox();
-            label8 = new Label();
-            button1 = new Button();
-            pictureBox2 = new PictureBox();
             label7 = new Label();
             label6 = new Label();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            label5 = new Label();
             pictureBox15 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            button3 = new Button();
             button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            txtNombre = new MaterialSkin.Controls.MaterialTextBox();
+            txtIdentidad = new MaterialSkin.Controls.MaterialTextBox();
+            txtTelefono = new MaterialSkin.Controls.MaterialTextBox();
+            txtDireccion = new MaterialSkin.Controls.MaterialTextBox();
+            label1 = new Label();
+            cmbSexo = new MaterialSkin.Controls.MaterialComboBox();
+            dtpFechaNacimiento = new DateTimePicker();
+            btnGuardar = new MaterialSkin.Controls.MaterialButton();
+            btnCancelar = new MaterialSkin.Controls.MaterialButton();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(21, 158);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(216, 23);
-            textBox1.TabIndex = 208;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(684, 13);
-            label8.Name = "label8";
-            label8.Size = new Size(102, 30);
-            label8.TabIndex = 206;
-            label8.Text = "Usuario: SRojas ▼\r\nFecha: 2026-06-03";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(21, 397);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 32);
-            button1.TabIndex = 205;
-            button1.Text = "Menu Principal";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(621, 11);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(55, 51);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 161;
-            pictureBox2.TabStop = false;
             // 
             // label7
             // 
@@ -114,28 +69,18 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(51, 140);
+            label6.Location = new Point(44, 125);
             label6.Name = "label6";
             label6.Size = new Size(107, 15);
             label6.TabIndex = 158;
             label6.Text = "Nombre Completo";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(95, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(156, 23);
-            label1.TabIndex = 153;
-            label1.Text = "Clinica Hospimesat";
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(14, 11);
+            pictureBox1.Location = new Point(457, 77);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(75, 64);
+            pictureBox1.Size = new Size(188, 129);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 152;
             pictureBox1.TabStop = false;
@@ -143,7 +88,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(51, 258);
+            label2.Location = new Point(290, 125);
             label2.Name = "label2";
             label2.Size = new Size(119, 15);
             label2.TabIndex = 209;
@@ -152,80 +97,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(51, 200);
+            label3.Location = new Point(44, 212);
             label3.Name = "label3";
             label3.Size = new Size(120, 15);
             label3.TabIndex = 210;
             label3.Text = "Numero de identidad";
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(21, 276);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(216, 23);
-            textBox2.TabIndex = 211;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(21, 218);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(216, 23);
-            textBox3.TabIndex = 212;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(360, 276);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(216, 23);
-            textBox4.TabIndex = 214;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(390, 258);
-            label4.Name = "label4";
-            label4.Size = new Size(115, 15);
-            label4.TabIndex = 213;
-            label4.Text = "Numero de Telefono";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(360, 179);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(80, 19);
-            radioButton1.TabIndex = 215;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Masculino";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(498, 179);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(78, 19);
-            radioButton2.TabIndex = 216;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Femenino";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(442, 141);
-            label5.Name = "label5";
-            label5.Size = new Size(45, 15);
-            label5.TabIndex = 217;
-            label5.Text = "Genero";
-            // 
             // pictureBox15
             // 
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(21, 248);
+            pictureBox15.Location = new Point(260, 115);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(24, 25);
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -235,18 +116,17 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(21, 130);
+            pictureBox4.Location = new Point(14, 115);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(24, 25);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 220;
             pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(21, 190);
+            pictureBox5.Location = new Point(14, 202);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(24, 25);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -256,27 +136,12 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(360, 248);
+            pictureBox6.Location = new Point(14, 289);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(24, 25);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 222;
             pictureBox6.TabStop = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.MenuHighlight;
-            button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(340, 344);
-            button3.Name = "button3";
-            button3.Size = new Size(80, 32);
-            button3.TabIndex = 231;
-            button3.Text = "Guardar";
-            button3.TextAlign = ContentAlignment.MiddleRight;
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -284,95 +149,201 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.Location = new Point(582, 276);
+            button4.Location = new Point(14, 376);
             button4.Name = "button4";
             button4.Size = new Size(23, 23);
             button4.TabIndex = 232;
             button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // txtNombre
             // 
-            button5.BackColor = Color.Transparent;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Image = (Image)resources.GetObject("button5.Image");
-            button5.Location = new Point(243, 158);
-            button5.Name = "button5";
-            button5.Size = new Size(23, 23);
-            button5.TabIndex = 233;
-            button5.UseVisualStyleBackColor = false;
+            txtNombre.AnimateReadOnly = false;
+            txtNombre.BorderStyle = BorderStyle.None;
+            txtNombre.Depth = 0;
+            txtNombre.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtNombre.Hint = "Nombre Completo";
+            txtNombre.LeadingIcon = null;
+            txtNombre.Location = new Point(14, 146);
+            txtNombre.MaxLength = 50;
+            txtNombre.MouseState = MaterialSkin.MouseState.OUT;
+            txtNombre.Multiline = false;
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(183, 50);
+            txtNombre.TabIndex = 238;
+            txtNombre.Text = "";
+            txtNombre.TrailingIcon = null;
             // 
-            // button6
+            // txtIdentidad
             // 
-            button6.BackColor = Color.Transparent;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(243, 218);
-            button6.Name = "button6";
-            button6.Size = new Size(23, 23);
-            button6.TabIndex = 234;
-            button6.UseVisualStyleBackColor = false;
+            txtIdentidad.AnimateReadOnly = false;
+            txtIdentidad.BorderStyle = BorderStyle.None;
+            txtIdentidad.Depth = 0;
+            txtIdentidad.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtIdentidad.Hint = "Número de Identidad";
+            txtIdentidad.LeadingIcon = null;
+            txtIdentidad.Location = new Point(14, 233);
+            txtIdentidad.MaxLength = 50;
+            txtIdentidad.MouseState = MaterialSkin.MouseState.OUT;
+            txtIdentidad.Multiline = false;
+            txtIdentidad.Name = "txtIdentidad";
+            txtIdentidad.Size = new Size(183, 50);
+            txtIdentidad.TabIndex = 239;
+            txtIdentidad.Text = "";
+            txtIdentidad.TrailingIcon = null;
             // 
-            // button7
+            // txtTelefono
             // 
-            button7.BackColor = Color.Transparent;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.Location = new Point(243, 276);
-            button7.Name = "button7";
-            button7.Size = new Size(23, 23);
-            button7.TabIndex = 235;
-            button7.UseVisualStyleBackColor = false;
+            txtTelefono.AnimateReadOnly = false;
+            txtTelefono.BorderStyle = BorderStyle.None;
+            txtTelefono.Depth = 0;
+            txtTelefono.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtTelefono.Hint = "Teléfono";
+            txtTelefono.LeadingIcon = null;
+            txtTelefono.Location = new Point(14, 320);
+            txtTelefono.MaxLength = 50;
+            txtTelefono.MouseState = MaterialSkin.MouseState.OUT;
+            txtTelefono.Multiline = false;
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(183, 50);
+            txtTelefono.TabIndex = 240;
+            txtTelefono.Text = "";
+            txtTelefono.TrailingIcon = null;
             // 
-            // button8
+            // txtDireccion
             // 
-            button8.Image = (Image)resources.GetObject("button8.Image");
-            button8.ImageAlign = ContentAlignment.MiddleLeft;
-            button8.Location = new Point(243, 344);
-            button8.Name = "button8";
-            button8.Size = new Size(78, 32);
-            button8.TabIndex = 237;
-            button8.Text = "Limpiar";
-            button8.TextAlign = ContentAlignment.MiddleRight;
-            button8.UseVisualStyleBackColor = true;
+            txtDireccion.AnimateReadOnly = false;
+            txtDireccion.BorderStyle = BorderStyle.None;
+            txtDireccion.Depth = 0;
+            txtDireccion.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtDireccion.Hint = "Dirección de Residencia";
+            txtDireccion.LeadingIcon = null;
+            txtDireccion.Location = new Point(14, 397);
+            txtDireccion.MaxLength = 50;
+            txtDireccion.MouseState = MaterialSkin.MouseState.OUT;
+            txtDireccion.Multiline = false;
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(196, 50);
+            txtDireccion.TabIndex = 241;
+            txtDireccion.Text = "";
+            txtDireccion.TrailingIcon = null;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(44, 299);
+            label1.Name = "label1";
+            label1.Size = new Size(52, 15);
+            label1.TabIndex = 242;
+            label1.Text = "Teléfono";
+            // 
+            // cmbSexo
+            // 
+            cmbSexo.AutoResize = false;
+            cmbSexo.BackColor = Color.FromArgb(255, 255, 255);
+            cmbSexo.Depth = 0;
+            cmbSexo.DrawMode = DrawMode.OwnerDrawVariable;
+            cmbSexo.DropDownHeight = 174;
+            cmbSexo.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbSexo.DropDownWidth = 121;
+            cmbSexo.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cmbSexo.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            cmbSexo.FormattingEnabled = true;
+            cmbSexo.Hint = "Sexo";
+            cmbSexo.IntegralHeight = false;
+            cmbSexo.ItemHeight = 43;
+            cmbSexo.Items.AddRange(new object[] { "M", "F" });
+            cmbSexo.Location = new Point(251, 202);
+            cmbSexo.MaxDropDownItems = 4;
+            cmbSexo.MouseState = MaterialSkin.MouseState.OUT;
+            cmbSexo.Name = "cmbSexo";
+            cmbSexo.Size = new Size(98, 49);
+            cmbSexo.StartIndex = 0;
+            cmbSexo.TabIndex = 243;
+            // 
+            // dtpFechaNacimiento
+            // 
+            dtpFechaNacimiento.Location = new Point(251, 146);
+            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            dtpFechaNacimiento.Size = new Size(200, 23);
+            dtpFechaNacimiento.TabIndex = 244;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnGuardar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnGuardar.Depth = 0;
+            btnGuardar.HighEmphasis = true;
+            btnGuardar.Icon = (Image)resources.GetObject("btnGuardar.Icon");
+            btnGuardar.Location = new Point(241, 355);
+            btnGuardar.Margin = new Padding(4, 6, 4, 6);
+            btnGuardar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.NoAccentTextColor = Color.Empty;
+            btnGuardar.Size = new Size(189, 36);
+            btnGuardar.TabIndex = 245;
+            btnGuardar.Text = "Guardar Paciente";
+            btnGuardar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnGuardar.UseAccentColor = false;
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCancelar.Depth = 0;
+            btnCancelar.HighEmphasis = true;
+            btnCancelar.Icon = (Image)resources.GetObject("btnCancelar.Icon");
+            btnCancelar.Location = new Point(457, 355);
+            btnCancelar.Margin = new Padding(4, 6, 4, 6);
+            btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.NoAccentTextColor = Color.Empty;
+            btnCancelar.Size = new Size(124, 36);
+            btnCancelar.TabIndex = 246;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCancelar.UseAccentColor = false;
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(44, 376);
+            label4.Name = "label4";
+            label4.Size = new Size(132, 15);
+            label4.TabIndex = 247;
+            label4.Text = "Dirección de Residencia";
+            label4.Click += btnGuardar_Click;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
+            ClientSize = new Size(668, 461);
+            Controls.Add(label4);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardar);
+            Controls.Add(dtpFechaNacimiento);
+            Controls.Add(cmbSexo);
+            Controls.Add(label1);
+            Controls.Add(txtDireccion);
+            Controls.Add(txtTelefono);
+            Controls.Add(txtIdentidad);
+            Controls.Add(txtNombre);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox15);
-            Controls.Add(label5);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
-            Controls.Add(textBox4);
-            Controls.Add(label4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label8);
-            Controls.Add(button1);
-            Controls.Add(pictureBox2);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Form4";
             Text = "Registro De Nuevo Paciente";
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -383,33 +354,25 @@
         }
 
         #endregion
-
-        private TextBox textBox1;
-        private Label label8;
-        private Button button1;
-        private PictureBox pictureBox2;
         private Label label7;
         private Label label6;
-        private Label label1;
         private PictureBox pictureBox1;
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Label label4;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private Label label5;
         private PictureBox pictureBox15;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private Button button3;
         private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private MaterialSkin.Controls.MaterialTextBox txtNombre;
+        private MaterialSkin.Controls.MaterialTextBox txtIdentidad;
+        private MaterialSkin.Controls.MaterialTextBox txtTelefono;
+        private MaterialSkin.Controls.MaterialTextBox txtDireccion;
+        private Label label1;
+        private MaterialSkin.Controls.MaterialComboBox cmbSexo;
+        private DateTimePicker dtpFechaNacimiento;
+        private MaterialSkin.Controls.MaterialButton btnGuardar;
+        private MaterialSkin.Controls.MaterialButton btnCancelar;
+        private Label label4;
     }
 }

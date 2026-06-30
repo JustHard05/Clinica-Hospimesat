@@ -29,114 +29,114 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button3 = new Button();
-            btnSalir = new Button();
-            btnAgentasDeCitas = new Button();
-            btnNuevoPaciente = new Button();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            btnResgistroDePacientes = new Button();
-            label1 = new Label();
+            materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            panel1 = new Panel();
+            lblEstadoServidor = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.Transparent;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(363, 24);
-            button3.Name = "button3";
-            button3.Size = new Size(45, 41);
-            button3.TabIndex = 2;
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // btnSalir
-            // 
-            btnSalir.Font = new Font("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
-            btnSalir.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSalir.Location = new Point(31, 416);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(76, 41);
-            btnSalir.TabIndex = 4;
-            btnSalir.Text = "Salir";
-            btnSalir.TextAlign = ContentAlignment.MiddleRight;
-            btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += button5_Click;
-            // 
-            // btnAgentasDeCitas
-            // 
-            btnAgentasDeCitas.Font = new Font("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnAgentasDeCitas.Image = (Image)resources.GetObject("btnAgentasDeCitas.Image");
-            btnAgentasDeCitas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAgentasDeCitas.Location = new Point(31, 229);
-            btnAgentasDeCitas.Name = "btnAgentasDeCitas";
-            btnAgentasDeCitas.Size = new Size(251, 40);
-            btnAgentasDeCitas.TabIndex = 5;
-            btnAgentasDeCitas.Text = "Agentas De Citas";
-            btnAgentasDeCitas.UseVisualStyleBackColor = true;
-            btnAgentasDeCitas.Click += btnAgentasDeCitas_Click;
-            // 
-            // btnNuevoPaciente
-            // 
-            btnNuevoPaciente.Font = new Font("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnNuevoPaciente.Image = (Image)resources.GetObject("btnNuevoPaciente.Image");
-            btnNuevoPaciente.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNuevoPaciente.Location = new Point(31, 299);
-            btnNuevoPaciente.Name = "btnNuevoPaciente";
-            btnNuevoPaciente.Size = new Size(251, 40);
-            btnNuevoPaciente.TabIndex = 6;
-            btnNuevoPaciente.Text = "Nuevo Paciente";
-            btnNuevoPaciente.UseVisualStyleBackColor = true;
-            btnNuevoPaciente.Click += btnNuevoPaciente_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(303, 8);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(75, 64);
+            pictureBox1.Size = new Size(120, 95);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // button1
+            // materialButton1
             // 
-            button1.Font = new Font("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleRight;
-            button1.Location = new Point(342, 87);
-            button1.Name = "button1";
-            button1.Size = new Size(76, 37);
-            button1.TabIndex = 14;
-            button1.Text = "Menu";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
+            materialButton1.AutoSize = false;
+            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton1.Depth = 0;
+            materialButton1.HighEmphasis = true;
+            materialButton1.Icon = null;
+            materialButton1.Location = new Point(98, 112);
+            materialButton1.Margin = new Padding(4, 6, 4, 6);
+            materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton1.Name = "materialButton1";
+            materialButton1.NoAccentTextColor = Color.Empty;
+            materialButton1.Size = new Size(220, 40);
+            materialButton1.TabIndex = 18;
+            materialButton1.Text = "REGISTRO DE PACIENTES";
+            materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton1.UseAccentColor = false;
+            materialButton1.UseVisualStyleBackColor = true;
+            materialButton1.Click += materialButton1_Click;
             // 
-            // btnResgistroDePacientes
+            // materialButton2
             // 
-            btnResgistroDePacientes.Font = new Font("Arial Narrow", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnResgistroDePacientes.Image = (Image)resources.GetObject("btnResgistroDePacientes.Image");
-            btnResgistroDePacientes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnResgistroDePacientes.Location = new Point(31, 160);
-            btnResgistroDePacientes.Name = "btnResgistroDePacientes";
-            btnResgistroDePacientes.Size = new Size(251, 40);
-            btnResgistroDePacientes.TabIndex = 16;
-            btnResgistroDePacientes.Text = "Registros De Pacientes";
-            btnResgistroDePacientes.UseVisualStyleBackColor = true;
-            btnResgistroDePacientes.Click += btnResgistroDePacientes_Click;
+            materialButton2.AutoSize = false;
+            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton2.Depth = 0;
+            materialButton2.HighEmphasis = true;
+            materialButton2.Icon = null;
+            materialButton2.Location = new Point(98, 214);
+            materialButton2.Margin = new Padding(4, 6, 4, 6);
+            materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton2.Name = "materialButton2";
+            materialButton2.NoAccentTextColor = Color.Empty;
+            materialButton2.Size = new Size(220, 40);
+            materialButton2.TabIndex = 19;
+            materialButton2.Text = "AGENDA DE CITAS";
+            materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton2.UseAccentColor = false;
+            materialButton2.UseVisualStyleBackColor = true;
+            materialButton2.Click += materialButton2_Click;
             // 
-            // label1
+            // materialButton3
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(93, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(156, 23);
-            label1.TabIndex = 17;
-            label1.Text = "Clinica Hospimesat";
+            materialButton3.AutoSize = false;
+            materialButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton3.Depth = 0;
+            materialButton3.HighEmphasis = true;
+            materialButton3.Icon = null;
+            materialButton3.Location = new Point(98, 320);
+            materialButton3.Margin = new Padding(4, 6, 4, 6);
+            materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton3.Name = "materialButton3";
+            materialButton3.NoAccentTextColor = Color.Empty;
+            materialButton3.Size = new Size(220, 40);
+            materialButton3.TabIndex = 20;
+            materialButton3.Text = "NUEVO PACIENTE";
+            materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton3.UseAccentColor = false;
+            materialButton3.UseVisualStyleBackColor = true;
+            materialButton3.Click += materialButton3_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(lblEstadoServidor);
+            panel1.Controls.Add(materialButton3);
+            panel1.Controls.Add(materialButton2);
+            panel1.Controls.Add(materialButton1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(1, 65);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(428, 429);
+            panel1.TabIndex = 21;
+            panel1.Paint += panel1_Paint;
+            // 
+            // lblEstadoServidor
+            // 
+            lblEstadoServidor.AutoSize = true;
+            lblEstadoServidor.Location = new Point(20, 29);
+            lblEstadoServidor.Name = "lblEstadoServidor";
+            lblEstadoServidor.Size = new Size(115, 21);
+            lblEstadoServidor.TabIndex = 22;
+            lblEstadoServidor.Text = "Estado de Servidor...";
+            lblEstadoServidor.UseCompatibleTextRendering = true;
+            lblEstadoServidor.Click += lblEstadoServior_Click;
             // 
             // Form1
             // 
@@ -144,30 +144,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(430, 495);
-            Controls.Add(label1);
-            Controls.Add(btnResgistroDePacientes);
-            Controls.Add(button1);
-            Controls.Add(pictureBox1);
-            Controls.Add(btnNuevoPaciente);
-            Controls.Add(btnAgentasDeCitas);
-            Controls.Add(btnSalir);
-            Controls.Add(button3);
+            Controls.Add(panel1);
             Name = "Form1";
             Text = "Menu Principal";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private Button button3;
-        private Button btnSalir;
-        private Button btnAgentasDeCitas;
-        private Button btnNuevoPaciente;
         private PictureBox pictureBox1;
-        private Button button1;
-        private Button btnResgistroDePacientes;
-        private Label label1;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private Panel panel1;
+        private Label lblEstadoServidor;
     }
 }
